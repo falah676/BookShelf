@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="">
+    <title>Bookshelf Falah</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="head_bar">
+        <h1 class="head_bar__title">Bookshelf Apps</h1>
+    </header>
+    <main>
+        <section class="data-section">
+            <div class="input-book">
+                <h2 style="text-align: center;">Masukan Data Buku</h2>
+                <form id="inputBook">
+                    <div class="input">
+                        <input type="text" id="inputBookTitle" required placeholder="Masukan Judul Buku">
+                    </div>
+                    <div class="input">
+                        <input type="text" id="inputBookAuthor" placeholder="Masukan Nama Penulis" required>
+                    </div>
+                    <div class="input">
+                        <input type="number" id="inputBookYear" placeholder="Masukan Tahun Terbit" required>
+                    </div>
+                    <div class="input-inline">
+                        <input id="inputBookIsComplete" type="checkbox">
+                        <label for="inputBookIsComplete">Selesai dibaca</label>
+                    </div>
+                    <button id="bookSubmit" class="bookSubmit" type="submit">Masukan Buku ke rak</button>
+                </form>
+            </div>
+            <div class="input-search">
+                <form id="searchBook">
+                    <input placeholder="Search Book..." type="text" name="text" class="inputSearch"
+                        id="searchBookTitle">
+                    <button type="submit" id="searchSubmit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div id="searchSection" class="book-search">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="shelf-section">
+            <div class="book_shelf">
+                <div class="book-parent">
+                    <h2>Belum selesai dibaca</h2>
+                    <div id="incompleteBookshelfList" class="book-list">
+                    </div>
+                </div>
+                <div class="book-parent">
+                    <h2>Selesai dibaca</h2>
+                    <div id="completeBookshelfList" class="book-list">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <Footer>
+        <div class="container">
+            <p class="text-footer">Copyright &copy;2023 <a href="https://github.com/falah676">Muhammad Fathul Falah</a>.
+                All right reserved.</p>
+        </div>
+    </Footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
